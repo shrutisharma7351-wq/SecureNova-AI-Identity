@@ -36,11 +36,11 @@ The objective is to demonstrate an end-to-end AI identity security lifecycle:
 
 ## Repository Structure
 
-01-threat-model/
-02-iam-design/
-03-red-team/
-04-blue-team/
-05-policy/
+- 📁 [01-threat-model](./01-threat-model/)
+- 📁 [02-iam-design](./02-iam-design/)
+- 📁 [03-red-team](./03-red-team/)
+- 📁 [04-blue-team](./04-blue-team/)
+- 📁 [05-policy](./05-policy/)
 
 ## Status
 
