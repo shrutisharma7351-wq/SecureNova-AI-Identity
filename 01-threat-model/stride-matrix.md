@@ -1,13 +1,13 @@
-# STRIDE Threat Matrix
+## STRIDE Matrix
 
-| Identity / Flow | Spoofing | Tampering | Repudiation | Information Disclosure | Denial of Service | Elevation of Privilege |
+| Identity Type | Spoofing | Tampering | Repudiation | Information Disclosure | Denial of Service | Elevation of Privilege |
 |---|---|---|---|---|---|---|
-| Human User → Auth0 | Stolen credentials or session | Modified authentication request | User denies login activity | User/session data exposed | Login flooding | User escalates to admin |
-| AI Agent → API | Agent token stolen | Agent request modified | Agent action cannot be traced | Agent receives unauthorized data | Agent API flooding | Agent obtains higher API scope |
-| M2M Client → API | Client secret stolen | API request modified | Service action not logged | API response exposes sensitive data | Excessive service requests | Client obtains unauthorized scope |
-| LLM API Key → LLM Provider | API key stolen | Prompt/request modified | LLM request cannot be attributed | Sensitive prompt/data exposed | Excessive API calls | Key gains excessive model permissions |
-| RAG Service → Knowledge Base | Service token stolen | RAG data/chunks modified | Retrieval activity not logged | Restricted knowledge exposed | Retrieval service overloaded | Service gains write/admin access |
-| MCP Server → Tools | MCP credential stolen | Tool request modified | Tool execution not logged | Tool exposes sensitive information | Excessive tool calls | Agent gains unauthorized tool privileges |
+| **Human User** | Stolen credentials used to impersonate user | Session/token manipulation | Missing login and authentication audit logs | Access/ID token or personal data leaked | Brute-force or credential-stuffing attacks | User obtains a higher role without authorization |
+| **AI Agent** | Stolen agent token used to impersonate agent | Prompt injection or manipulated agent instructions | Agent actions not properly logged | Agent exposes sensitive prompts, data, or context | Excessive agent requests consume resources | Agent gains access to unauthorized tools or models |
+| **OAuth M2M Client** | Stolen client secret/token reused by attacker | Modified API request payload or claims | M2M API calls not properly logged | Client exposes sensitive internal API data | Excessive API requests without rate limiting | Client receives broader OAuth scopes than required |
+| **LLM API Key** | Stolen API key used by unauthorized party | Altered API requests or key configuration | API-key usage not properly attributed | API key, prompts, PII, or context leaked | Token abuse causes cost or resource exhaustion | API key gains access to unauthorized models/projects |
+| **RAG Pipeline Service Identity** | Spoofed service identity queries vector database | Poisoned or manipulated documents/embeddings | Missing audit trail for ingestion and updates | Sensitive documents retrieved by unauthorized queries | Vector DB query or ingestion flooding | Read-only identity escalated to write/delete access |
+| **MCP Server Identity** | Forged or stolen MCP server/service token | Malicious tool parameters or API payloads | Tool invocations not properly logged | MCP tool responses expose internal data | MCP server flooded with tool requests | MCP identity invokes admin/restricted tools |
 
 ## STRIDE Categories
 
