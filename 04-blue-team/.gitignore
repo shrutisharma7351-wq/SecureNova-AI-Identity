@@ -1,0 +1,6 @@
+# Project 4 virtual environment
+.venv/
+
+# Ed25519 private signing key
+crypto_identity/agent_private_key.pem
+
