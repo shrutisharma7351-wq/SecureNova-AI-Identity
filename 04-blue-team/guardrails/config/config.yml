@@ -1,0 +1,9 @@
+colang_version: "2.x"
+
+models:
+  - type: main
+    engine: ollama
+    model: qwen3:4b
+    parameters:
+      base_url: http://localhost:11434/v1
+      temperature: 0.0
