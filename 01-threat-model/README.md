@@ -26,6 +26,11 @@ The threat modelling phase focuses on:
 |---|---|
 | `identity-inventory.md` | Inventory of identities, identity attributes, credentials, tokens, services, and other identity-related assets |
 | `stride-matrix.md` | STRIDE-based threat analysis covering potential threats to the SecureNova identity architecture |
+| `threat-model.json`| Threat Dragon threat model defining SecureNova AI identity types, data flows, trust boundaries, and key security threats. |
+| `AT-1-key-exfiltration.drawio`| Attack tree modelling potential paths an attacker could use to obtain or exfiltrate sensitive cryptographic keys. |
+| `AT-2-scope-escalation.drawio`| Attack tree modelling potential paths for escalating identity, token, or authorization scope beyond intended permissions |
+| `AT-3-rag-poisoning.drawio`| Attack tree modelling potential paths for poisoning RAG data and influencing AI agent responses or behaviour. |
+
 
 ## Threat Modelling Approach
 
