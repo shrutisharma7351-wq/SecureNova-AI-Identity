@@ -43,33 +43,3 @@ The analysis considers the SecureNova environment from an identity-security pers
 
 Threats are evaluated to support prioritisation and subsequent defensive implementation.
 
-## Security Focus
-
-The threat model provides the basis for addressing risks such as:
-
-- Identity spoofing
-- Credential compromise
-- Unauthorized access
-- Privilege misuse
-- Token abuse
-- Identity enumeration
-- Tampering with identity-related data
-- Repudiation and accountability gaps
-- Denial-of-service conditions
-- Information disclosure
-
-## Relationship to the Capstone
-
-This phase represents the first stage of the SecureNova security lifecycle:
-
-**Threat Model → IAM → Red Team → Blue Team → Policy & Compliance**
-
-The risks identified here are used to guide the authentication and authorization design, adversarial testing, defensive controls, and policy development in later phases.
-
-## Expected Outcome
-
-The outcome of this phase is a documented understanding of the identity threat landscape and a prioritised foundation for implementing and validating security controls.
-
-## Scope
-
-This is a security analysis artefact and does not represent a production security assessment. Findings are intended for the controlled SecureNova capstone environment.
