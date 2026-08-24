@@ -5,13 +5,24 @@
   "summary": {
     "title": "SecureNova AI Threat Model",
     "owner": "Shruti Sharma",
-    "description": "",
+    "description": "SecureNova is an AI-powered identity security platform that manages human and machine identities, AI agents, OAuth M2M clients, LLM API keys, RAG pipeline services, and MCP server identities. The threat model identifies trust boundaries, STRIDE threats, attack paths, and security risks across the user, agent, and internal API layers.",
     "id": 0
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 0,
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "SecureNova AI Identity Data Flow",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Data-flow diagram showing human users, AI agent, OAuth M2M client, LLM API, RAG pipeline, MCP server, internal APIs, trust boundaries, and security-sensitive data flows."
+      }
+    ],
+    "diagramTop": 1,
     "reviewer": "",
     "threatTop": 0
   }
